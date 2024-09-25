@@ -1,2 +1,7 @@
 <h1>Youngest Director</h1>
-<%= @youngest_director %>
+<p>
+  The youngest directior in our dataset right now is 
+  <a href="/directors/<%= @youngest_director.id %>">
+    <%= @youngest_director.name%>
+  </a>, born on <%= @youngest_director_age.strftime("%B %d, %Y.") %>
+</p>
